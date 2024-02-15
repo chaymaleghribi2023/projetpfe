@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import MyComponent from "./boutique";
+import Footer from "./footer"
 import "./globals.css";
+import dropdown from "./dropdown";
+import Header from "./header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header /> {/* Ajout de l'importation du composant Header */}
+        {children}
+       
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }

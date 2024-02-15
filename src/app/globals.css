@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -31,3 +31,195 @@ body {
     text-wrap: balance;
   }
 }
+ */@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}*/
+.scrolling-images {
+  overflow-x:scroll;
+  white-space: nowrap;
+ 
+}
+
+.scrolling-images img {
+  display: inline-block;
+  margin-right: 10px; 
+  overflow-y: scroll; 
+  height: 200px;
+  width:100%;
+  animation: scrollAnimation 10s linear infinite;
+  
+}
+/* @keyframes scrollAnimation {
+  0% {
+    transform: translateY(100); /* Début de l'animation */
+  */
+  /* 
+  100% {
+    transform: translatex(-100%); 
+  } */
+
+.image-container {
+  width: 200px; /* Changer la largeur selon vos besoins */
+  /*background-size: cover;*/
+  background-color: beige;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Ajustez l'opacité selon vos besoins */
+}
+.border-red-500 {
+  border-color: red;
+}
+.boutiques-container img {
+  width: 100px;
+  height: auto;
+  }
+  .boutiques-container {
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .boutique {
+    width: 200px;
+    margin: 10px; 
+  }
+  
+  .boutique img  {
+    width: 100%; 
+  }
+  p{
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+  }
+  
+  .footer {
+    background-color: #171818; /* Couleur de fond plus sombre */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 0;
+    transition: background-color 1s ease; /* Transition de la couleur */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    width:15%;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+    size:20px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+.icon {
+  font-size: 24px; 
+  margin-right: 10px; 
+  color: #333;
+}
+
+
+.facebook-icon {
+  color: #3b5998; 
+  width: 20px;
+  height: 20px;
+}
+
+.twitter-icon {
+  color: #1da1f2;
+  width: 20px;
+  height: 20px;
+}
+
+.instagram-icon {
+  color: #e4405f;
+  width: 20px;
+  height: 20px;
+}@keyframes changeColor {
+  0% {
+    background-color: #544747; 
+  }
+  50% {
+    background-color: rgb(227, 224, 136); 
+  }
+  100% {
+    background-color: #544747; 
+  }
+}
+
+.footer:hover {
+  animation: changeColor 10s infinite; 
+}
+.social-icons {
+  display: flex;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+  
+}
+
+
+
+    
+
+
+  
+
+
